@@ -1,5 +1,4 @@
-ion-header {
-  div {
+.header {
     display: flex;
     justify-content: flex-end;
     margin-top: 5%;
@@ -9,7 +8,6 @@ ion-header {
       font-weight: bold;
       color: #ff5035;
     }
-  }
 }
 
 .telephone-image {
@@ -49,4 +47,7 @@ ion-button {
   width: 80%;
   --background: #004c6a;
   color: white;
+  ion-icon {
+    background-color: #004c6a;
+  }
 }
