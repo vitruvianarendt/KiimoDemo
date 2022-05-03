@@ -1,13 +1,13 @@
 .header {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5%;
-    margin-right: 5%;
-    ion-router-link {
-      font-size: x-large;
-      font-weight: bold;
-      color: #ff5035;
-    }
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+  margin-right: 5%;
+  ion-router-link {
+    font-size: x-large;
+    font-weight: bold;
+    color: #ff5035;
+  }
 }
 
 .telephone-image {
@@ -28,6 +28,7 @@
     border: #e9e9e9 solid;
     border-radius: 3rem;
     --padding-end: 0px;
+    --placeholder-color: black;
   }
 }
 
@@ -37,13 +38,13 @@
 }
 
 .or {
-  margin-top: 20%;
+  margin-top: 10%;
   color: black;
   font-weight: bold;
 }
 
 ion-button {
-  margin-top: 20%;
+  margin-top: 10%;
   width: 80%;
   --background: #004c6a;
   color: white;
