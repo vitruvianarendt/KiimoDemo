@@ -1,0 +1,24 @@
+<ion-app>
+  <ion-header collapse="condense">
+    <div>
+      <ion-router-link routerLink="../phone-confirmation" routerDirection="forward">Следно</ion-router-link>
+    </div>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <div class="container">
+      <div class="telephone-image">
+        <ion-img src="./assets/telephone.png"></ion-img>
+      </div>
+      <strong>Телефонски број</strong>
+      <div class="telephone-number">
+        <ion-input type="text" placeholder="Твој телефонски број"></ion-input>
+      </div>
+      <div class="verification">Ни треба твојот телефонски број за да
+        направиме верификација.</div>
+      <div class="or">или</div>
+      <ion-button shape="round" routerLink="../facebook-register" routerDirection="forward">
+        <ion-icon name="logo-facebook"></ion-icon>Регистрирај се со Facebook
+      </ion-button>
+    </div>
+  </ion-content>
+</ion-app>

@@ -1,0 +1,43 @@
+.user-image {
+    display: flex;
+    justify-content: center;
+    margin: 25% 0 25% 0;
+    ion-img {
+        width: 35%;
+    }
+}
+
+.input-fields {
+    display: flex;
+    justify-content: center;
+    margin: 5% 10% 5% 10%;
+    ion-input {
+        background-color: #e9e9e9;
+        border: #e9e9e9 solid;
+        border-radius: 3rem;
+        --padding-end: 0px;
+        --padding-start: 2rem;
+        text-align: left;
+    }
+}
+
+.verification {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20% 0 0 10%;
+    color: #ff5035;
+    font-size: small;
+    ion-checkbox {
+        margin-right: 3%;
+        --background: #e9e9e9;
+        --background-checked: #ff5035;
+    }
+}
+
+ion-button {
+    margin-top: 10%;
+    width: 80%;
+    --background: #ff5035;
+    color: white;
+  }

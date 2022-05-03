@@ -1,0 +1,27 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <div class="container">
+      <div class="user-image">
+        <ion-img src="./assets/user.png"></ion-img>
+      </div>
+      <div class="input-fields">
+        <ion-input type="text" placeholder="Име"></ion-input>
+      </div>
+      <div class="input-fields">
+        <ion-input type="text" placeholder="Презиме"></ion-input>
+      </div>
+      <div class="input-fields">
+        <ion-input type="email" placeholder="Е-меил адреса"></ion-input>
+      </div>
+      <div class="input-fields">
+        <ion-input type="text" placeholder="Твој телефонски број"></ion-input>  
+      </div>
+      <div class="verification">
+        <ion-checkbox color="light">
+        </ion-checkbox>
+        <ion-label>Се согласувам со правилата на Кимо</ion-label>
+      </div>
+      <ion-button shape="round" routerLink="../home" routerDirection="forward">Продолжи</ion-button>
+    </div>
+  </ion-content>
+</ion-app>

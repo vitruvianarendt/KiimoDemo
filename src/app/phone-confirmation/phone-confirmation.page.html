@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-header collapse="condense">
+    <div>
+      <ion-router-link routerLink="../home" routerDirection="backward">Назад</ion-router-link>
+    </div>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <div class="container">
+      <div class="mail-image">
+        <ion-img src="./assets/mail.png"></ion-img>
+      </div>
+      <strong>КОД</strong>
+      <div class="code">
+        <ion-input type="number" placeholder="Внеси код"></ion-input>
+      </div>
+      <div class="verification">Напиши го 4 цифрениот број што ти пристинга
+        преку смс.
+      </div>
+    </div>
+  </ion-content>
+</ion-app>
