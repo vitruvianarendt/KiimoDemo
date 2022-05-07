@@ -1,0 +1,23 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <div class="container">
+      <div class="user-image">
+        <ion-img src="./assets/user.png"></ion-img>
+      </div>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Здраво</ion-card-subtitle>
+        </ion-card-header>
+        <div *ngIf="users">
+          <div *ngFor="let user of users">
+            <ion-card-title>{{ user.firstName }}</ion-card-title>
+          </div>
+        </div>
+        <ion-card-content>
+          Регистрација е успешна!
+        </ion-card-content>
+      </ion-card>
+      <ion-button shape="round" routerDirection="forward" routerLink="../all-users">Сите корисници</ion-button>
+    </div>
+  </ion-content>
+</ion-app>

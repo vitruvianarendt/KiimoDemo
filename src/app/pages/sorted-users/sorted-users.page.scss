@@ -1,0 +1,16 @@
+.user-image {
+    display: flex;
+    justify-content: center;
+    margin: 25% 0 25% 0;
+    ion-img {
+        width: 35%;
+    }
+}
+
+ion-button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    --background: #ff5035;
+    color: white;
+}

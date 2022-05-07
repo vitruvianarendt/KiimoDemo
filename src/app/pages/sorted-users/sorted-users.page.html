@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <div class="container">
+      <div class="user-image">
+        <ion-img src="./assets/user.png"></ion-img>
+      </div>
+      <div *ngIf="users">
+        <div *ngFor="let user of users">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>{{ user.id }}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-title>{{ user.firstName }}</ion-card-title>
+            <ion-card-content>{{ user.email }}</ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+      <ion-button shape="round" routerDirection="forward" routerLink="../home">Почетна Страна</ion-button>
+    </div>
+  </ion-content>
+</ion-app>

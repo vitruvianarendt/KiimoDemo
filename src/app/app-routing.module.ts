@@ -4,20 +4,32 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'pages/home',
     pathMatch: 'full'
   },
   {
     path: 'phone-confirmation',
-    loadChildren: () => import('./phone-confirmation/phone-confirmation.module').then( m => m.PhoneConfirmationPageModule)
+    loadChildren: () => import('./pages/phone-confirmation/phone-confirmation.module').then(m => m.PhoneConfirmationPageModule)
   },
   {
     path: 'facebook-register',
-    loadChildren: () => import('./facebook-register/facebook-register.module').then( m => m.FacebookRegisterPageModule)
+    loadChildren: () => import('./pages/facebook-register/facebook-register.module').then(m => m.FacebookRegisterPageModule)
+  },
+  {
+    path: 'successful-registration',
+    loadChildren: () => import('./pages/successful-registration/successful-registration.module').then(m => m.SuccessfulRegistrationPageModule)
+  },
+  {
+    path: 'all-users',
+    loadChildren: () => import('./pages/all-users/all-users.module').then(m => m.AllUsersPageModule)
+  },
+  {
+    path: 'sorted-users',
+    loadChildren: () => import('./pages/sorted-users/sorted-users.module').then(m => m.SortedUsersPageModule)
   },
 ];
 
